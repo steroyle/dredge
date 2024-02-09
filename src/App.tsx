@@ -1,8 +1,7 @@
-import './App.css'
-import { fishes } from './data';
+import './App.css';
+import {fishes} from './data';
 
 function App() {
-
   return (
     <>
       <h1>Dredge Fish Finder</h1>
@@ -16,7 +15,7 @@ function App() {
         })}
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
