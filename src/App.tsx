@@ -1,9 +1,7 @@
-import { useState } from 'react'
 import './App.css'
-import { fishes } from './data'
+import { fishes } from './data';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
