@@ -62,6 +62,7 @@ export const fishes: Fish[] = [
 interface WaterType {
   id: number;
   name: string;
+  bgColor: string;
   color: string;
 }
 
@@ -69,36 +70,55 @@ export const waterTypes: WaterType[] = [
   {
     id: 1,
     name: 'coastal',
-    color: '#3B357D'
+    bgColor: '#3B357D',
+    color: 'white'
   },
   {
     id: 2,
     name: 'shallow',
-    color: '#327F75'
+    bgColor: '#327F75',
+    color: 'white'
   },
   {
     id: 3,
     name: 'oceanic',
-    color: '#16658C'
+    bgColor: '#16658C',
+    color: 'white'
   },
   {
     id: 4,
     name: 'abyssal',
-    color: '#7B4084'
+    bgColor: '#7B4084',
+    color: 'white'
   },
   {
     id: 5,
     name: 'hadal',
-    color: '#812F3D'
+    bgColor: '#812F3D',
+    color: 'white'
   },
   {
     id: 6,
     name: 'volcanic',
-    color: '#B12F22'
+    bgColor: '#B12F22',
+    color: 'white'
   },
   {
     id: 7,
     name: 'mangrove',
-    color: '#84662A'
+    bgColor: '#84662A',
+    color: 'white'
+  },
+  {
+    id: 8,
+    name: 'crab',
+    bgColor: '#A58961',
+    color: 'white'
+  },
+  {
+    id: 9,
+    name: 'ice',
+    bgColor: '#BDFFF7',
+    color: 'black'
   }
 ];

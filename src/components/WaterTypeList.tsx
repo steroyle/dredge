@@ -5,8 +5,8 @@ export default function WaterTypeList() {
     return (
       <div
         style={{
-          background: waterType.color,
-          color: 'white',
+          background: waterType.bgColor,
+          color: waterType.color,
           textTransform: 'uppercase',
           padding: 15,
           fontWeight: 700
