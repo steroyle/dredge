@@ -59,7 +59,7 @@ export const fishes: Fish[] = [
   }
 ];
 
-interface WaterType {
+export interface WaterType {
   id: number;
   name: string;
   bgColor: string;

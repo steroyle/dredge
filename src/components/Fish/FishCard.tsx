@@ -6,15 +6,15 @@ interface FishCardProps {
 }
 
 export default function FishCard({fish}: FishCardProps) {
-  const {getWaterTypeColor} = useWaterType();
-  const waterTypeColor = getWaterTypeColor(fish.waterType);
+  const {getWaterTypeInfo} = useWaterType();
+  const waterTypeInfo = getWaterTypeInfo(fish.waterType);
 
   return (
     <div className="fish-card">
       <h2>{`#${fish.id} ${fish.name}`}</h2>
       <p>{fish.description}</p>
-      <p style={{background: waterTypeColor, color: 'white'}}>
-        {getWaterTypeColor(fish.waterType)}
+      <p style={{background: waterTypeInfo?.bgColor, color: waterTypeInfo?.color}}>
+        {fish.waterType}
       </p>
     </div>
   );
