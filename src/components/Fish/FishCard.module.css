@@ -1,4 +1,7 @@
 .card {
   background: #d5caac;
   padding: 20px;
+  @media ($sm) {
+    font-size: rem(30px);
+  }
 }
