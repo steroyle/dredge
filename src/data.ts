@@ -1,6 +1,7 @@
-interface fish {
+export interface Fish {
   id: number;
   name: string;
+  description: string;
   image: string;
   location: string;
   type: string;
@@ -12,12 +13,12 @@ interface fish {
   abberrations: number[];
 }
 
-export const fishes: fish[] = [
+export const fishes: Fish[] = [
   {
     id: 1,
     name: 'Blue Mackerel',
-    image:
-      'https://static.wikia.nocookie.net/dredge/images/2/26/Blue_Mackerel.png/revision/latest/scale-to-width-down/150',
+    description: 'Practically worthless but enough to stave off hunger.',
+    image: '',
     location: 'The Marrows',
     type: 'Coastal',
     day: true,
@@ -30,8 +31,8 @@ export const fishes: fish[] = [
   {
     id: 2,
     name: 'Cod',
-    image:
-      'https://static.wikia.nocookie.net/dredge/images/4/41/Cod.png/revision/latest/scale-to-width-down/150',
+    description: 'Plentiful and basic.',
+    image: '',
     location: 'The Marrows',
     type: 'Coastal',
     day: true,
@@ -40,5 +41,19 @@ export const fishes: fish[] = [
     trawl: true,
     pot: false,
     abberrations: [82, 83, 84]
+  },
+  {
+    id: 3,
+    name: 'Arrow Squid',
+    description: 'Rises from the depths at night to feed - or be fed upon.',
+    image: '',
+    location: 'The Marrows',
+    type: 'Coastal',
+    day: false,
+    night: true,
+    rod: true,
+    trawl: true,
+    pot: false,
+    abberrations: [85, 86]
   }
 ];

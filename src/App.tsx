@@ -1,17 +1,15 @@
 import './App.css';
+import FishCard from './components/Fish/FishCard';
 import {fishes} from './data';
 
 function App() {
   return (
     <>
       <h1>Dredge Fish Finder</h1>
-      <div className="card">
+
+      <div className="fish-grid">
         {fishes.map((fish) => {
-          return (
-            <>
-              <h2>{`#${fish.id} ${fish.name}`}</h2>
-            </>
-          );
+          return <FishCard fish={fish} />;
         })}
       </div>
     </>
