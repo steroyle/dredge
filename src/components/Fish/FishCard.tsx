@@ -1,7 +1,7 @@
-import {Box, Text} from '@mantine/core';
+import {Box, Flex, Text, Title} from '@mantine/core';
 import {Fish} from '../../data';
 import useWaterType from '../../hooks/useWaterType';
-import styles from './FishCard.module.css';
+import classes from './FishCard.module.css';
 
 interface FishCardProps {
   fish: Fish;
@@ -12,15 +12,28 @@ export default function FishCard({fish}: FishCardProps) {
   const waterTypeInfo = getWaterTypeInfo(fish.waterType);
 
   return (
-    <Box className={styles.card}>
-      <h2>{`#${fish.id} ${fish.name}`}</h2>
+    <Box className={classes.card}>
+      <Title order={2} className={classes.title} mb={20}>{`#${fish.id} ${fish.name}`}</Title>
 
-      <Box bg={waterTypeInfo?.bgColor} c={waterTypeInfo?.color} p={20}>
-        <Text tt="uppercase" fw="bold" fz={20}>
+      <Flex className={classes.content}>
+        <Title
+          order={3}
+          className={classes.type}
+          bg={waterTypeInfo?.bgColor}
+          c={waterTypeInfo?.color}
+          fz={18}
+        >
           {fish.waterType}
+        </Title>
+        <Text
+          bg={waterTypeInfo?.bgColor}
+          c={waterTypeInfo?.color}
+          p={16}
+          classNames={{root: classes.description}}
+        >
+          {fish.description}
         </Text>
-        <Text>{fish.description}</Text>
-      </Box>
+      </Flex>
     </Box>
   );
 }
