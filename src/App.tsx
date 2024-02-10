@@ -1,5 +1,6 @@
 import './App.css';
 import FishCard from './components/Fish/FishCard';
+import WaterTypeList from './components/WaterTypeList';
 import {fishes} from './data';
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
           return <FishCard fish={fish} />;
         })}
       </div>
+
+      <WaterTypeList />
     </>
   );
 }

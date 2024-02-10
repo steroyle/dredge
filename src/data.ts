@@ -69,7 +69,7 @@ export const waterTypes: WaterType[] = [
   {
     id: 1,
     name: 'coastal',
-    color: '#3C3579'
+    color: '#3B357D'
   },
   {
     id: 2,
