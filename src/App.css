@@ -1,5 +1,8 @@
+body {
+  min-height: 100vh;
+}
+
 #root {
-  background: #f8f9fa;
   padding: 2rem;
 }
 .container {

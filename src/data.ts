@@ -56,6 +56,20 @@ export const fishes: Fish[] = [
     trawl: true,
     pot: false,
     abberrations: [85, 86]
+  },
+  {
+    id: 4,
+    name: 'Grey Eel',
+    description: 'A slimy creature, tainted with the silt and much of the seabed.',
+    image: '',
+    location: 'The Marrows',
+    waterType: 'shallow',
+    day: true,
+    night: true,
+    rod: true,
+    trawl: true,
+    pot: false,
+    abberrations: [87, 88]
   }
 ];
 
