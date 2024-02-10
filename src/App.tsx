@@ -5,7 +5,7 @@ import {fishes} from './data';
 function App() {
   return (
     <>
-      <h1>Dredge Fish Finder</h1>
+      <h1>Dredge Encyclopedia</h1>
 
       <div className="fish-grid">
         {fishes.map((fish) => {
